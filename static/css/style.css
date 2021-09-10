@@ -21,7 +21,7 @@
     text-align: center;
     position: absolute;
     bottom: 30px;
-    left: 27%;
+    left: 28%;
     color: white;
     text-transform: uppercase;
     animation: fadeIn linear 4s;
@@ -34,3 +34,42 @@
     0% {opacity:0;}
     100% {opacity:1;}
   }
+
+.logInForm {
+    width: 30%;
+    margin: auto;
+    position: absolute;
+    top:30%;
+    left:35%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.newUser{
+    font-size: 15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+}
+
+button {
+    background-color: black;
+    border-radius: 0;
+    color: white;
+    border: white;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.register {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    position: absolute;
+    top: 23%;
+    left: 42%;
+    color: white;
+    text-transform: uppercase;
+}

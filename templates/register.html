@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="hero-img">
-    <p class="slogan">The final frontier</p>
+    <p class="register">Register here!</p>
     <form method="POST" action="" class="logInForm">
         <div class="form-group">
           <label for="username">Username:</label>
@@ -14,8 +14,7 @@
           <input type="password" name="password" class="form-control" id="password" 
           minlength="5" maxlength="20" placeholder="Password" required>
         </div>
-        <button type="submit button" data-toggle="modal" data-target="#RegisterModal">Login!</button>
-        <p class="newUser">New User? <a href="{{ url_for ('register') }}">Register Here!</a></p>
+        <button type="submit button" data-toggle="modal" data-target="#RegisterModal">Register!</button>
       </form>
 </div>
 {% endblock %}
