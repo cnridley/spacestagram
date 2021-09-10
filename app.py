@@ -66,6 +66,7 @@ def register():
 def space():
     return render_template("space.html")
 
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
