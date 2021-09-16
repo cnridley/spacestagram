@@ -6,11 +6,12 @@
     top: 30px;
     left: 32%;
     color: white;
+    text-decoration: none;
 }
 
 .header:hover {
     text-decoration: none;
-    color: white;
+    color: darkgray;
 }
 
 .hero-img {
@@ -107,7 +108,7 @@ button {
 
 .images{
     font-size: 30px;
-    margin-top: 30px;
+    text-align: center;
 }
 
 body{
@@ -116,4 +117,25 @@ body{
 
 .imageRows {
     margin-top: 200px !important;
+}
+
+.menuOptions {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.menuOptions a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.menuOptions a:hover {
+    color: darkgray;
+    font-size: 25px;
+    text-decoration: underline;
+    margin-right: 20px;
 }
