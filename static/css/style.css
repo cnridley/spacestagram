@@ -19,6 +19,7 @@
     width: 100vw;
     background-image: url(https://res.cloudinary.com/cnridley/image/upload/v1631287384/sunrise_nul6hy.jpg);
     background-repeat: no-repeat; 
+    z-index: -10;
 }
 
 .slogan {
