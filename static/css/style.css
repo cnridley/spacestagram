@@ -78,3 +78,42 @@ button {
     color: white;
     text-transform: uppercase;
 }
+
+.card-img-top{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.card-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.card{
+    min-height: 800px;
+    width: 40%;
+    border: 3px solid black;
+    border-radius: 0;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.images{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+body{
+    background-color: black;
+}
+
+.imageRows {
+    margin-top: 200px !important;
+}
