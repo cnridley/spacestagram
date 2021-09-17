@@ -44,11 +44,11 @@ function useApiData(data){
 }
 
 
-$(document).ready(function(){
-  $(".likedImage").click(function(){
-      $(this).attr("style", "display:none")
-  })
-});
+// $(document).ready(function(){
+//   $(".likedImage").click(function(){
+//       $(this).attr("style", "display:none")
+//   })
+// });
 
 
 
