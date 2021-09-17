@@ -23,13 +23,13 @@ function useApiData(data){
                   <h5 class="card-title">${d.title}</h5>
                   <p class="card-text">${d.explanation}</p>
                   <div class="row m-auto container-fluid">
-                  <div class="col-3 m-auto images" onclick="favourites()">
-                    <i class="far fa-heart"></i>
+                  <div class="col-3 m-auto images">
+                    <i class="far fa-heart likedImage"></i>
                   </div>
-                  <div class="col-3 m-auto images" onclick="favourites()">
+                  <div class="col-3 m-auto images">
                     <i class="far fa-thumbs-up"></i>
                   </div>
-                  <div class="col-3 m-auto images" onclick="favourites()">
+                  <div class="col-3 m-auto images">
                     <i class="far fa-thumbs-down"></i>
                   </div>
                   </div>                  
@@ -44,17 +44,15 @@ function useApiData(data){
 }
 
 
-// function to append favourites into an array 
-// favourite array will be on a separate favourites page. 
-
-function favourites(){
-  let favouriteImages = [];
-  let favourite = $(this);
-  favouriteImages.push(favourite);
-  console.log(favouriteImages)
-
-  document.getElementById("fave").innerHTML += favouriteImages;
-}
+// $(document).ready(function(){
+//   $(".likedImage").click(function(){
+//     for(let i = 0; likedImage.length; i++){
+//       $(this).attr("style", "display:none")
+//     }
+//   })
+// });
 
 
-// let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=10`);
+
+
+
