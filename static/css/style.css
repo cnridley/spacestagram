@@ -117,7 +117,7 @@ body{
 }
 
 .imageRows {
-    margin-top: 200px !important;
+    margin-top: 50px !important;
 }
 
 .menuOptions {
@@ -139,4 +139,13 @@ body{
     font-size: 25px;
     text-decoration: underline;
     margin-right: 20px;
+}
+
+.datePicker{
+    width: 50%;
+    margin: auto;
+    margin-top: 200px;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 18px;
 }

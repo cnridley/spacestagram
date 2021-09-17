@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div id="content" class="row container-fluid m-auto imageRows" onload="sendApiRequest()">
+<div class="row container-fluid datePicker">
+    <label for="startDate">Start Date:</label>
+        <input type="date" id="start" name="start" value="new Date()">
+    <label for="endDate">End Date:</label>
+        <input type="date" id="end" name="end" value="new Date()">
+  <input type="submit" onclick="sendApiRequest()">
+</div>
+
+<div id="content" class="row container-fluid m-auto imageRows" >
     <!-- API info will be rendered here -->
     
 </div>

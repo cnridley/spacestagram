@@ -1,6 +1,8 @@
 async function sendApiRequest(){
     let apiKey = "ausYefrhnm9ixSnHn7hClnVkv7YfsUDL4yQMhQSL"
-    let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=10`);
+    let start = document.getElementById("start").value;
+    let end = document.getElementById("end").value;
+    let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${start}&end_date=${end}`);
     console.log(response)
     let data = await response.json()
     console.log(data)
@@ -53,3 +55,6 @@ function favourites(){
 
   document.getElementById("fave").innerHTML += favouriteImages;
 }
+
+
+// let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=10`);
