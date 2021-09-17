@@ -107,9 +107,15 @@ button {
     margin-top: 30px;
 }
 
+.card-body {
+    flex: 0 !important;
+}
+
 .images{
     font-size: 30px;
     text-align: center;
+    background-color: white;
+    color: black;
 }
 
 body{

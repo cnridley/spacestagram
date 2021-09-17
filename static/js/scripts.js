@@ -22,19 +22,19 @@ function useApiData(data){
                 <div class="card-body">
                   <h5 class="card-title">${d.title}</h5>
                   <p class="card-text">${d.explanation}</p>
-                  <div class="row m-auto container-fluid">
-                  <div class="col-3 m-auto images">
-                    <i class="far fa-heart likedImage"></i>
-                  </div>
-                  <div class="col-3 m-auto images">
-                    <i class="far fa-thumbs-up"></i>
-                  </div>
-                  <div class="col-3 m-auto images">
-                    <i class="far fa-thumbs-down"></i>
-                  </div>
-                  </div>                  
                 </div>
-              </div>
+                  <div class="row m-auto container-fluid">
+                  <button class="col-3 m-auto images likedImage">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="col-3 m-auto images">
+                    <i class="far fa-thumbs-up"></i>
+                  </button>
+                  <button class="col-3 m-auto images">
+                    <i class="far fa-thumbs-down"></i>
+                  </button>
+                  </div>                  
+            </div>
         `
 
     }
@@ -44,13 +44,11 @@ function useApiData(data){
 }
 
 
-// $(document).ready(function(){
-//   $(".likedImage").click(function(){
-//     for(let i = 0; likedImage.length; i++){
-//       $(this).attr("style", "display:none")
-//     }
-//   })
-// });
+$(document).ready(function(){
+  $(".likedImage").click(function(){
+      $(this).attr("style", "display:none")
+  })
+});
 
 
 
