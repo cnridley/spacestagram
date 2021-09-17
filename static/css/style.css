@@ -100,8 +100,8 @@ button {
 
 .card{
     min-height: 800px;
-    width: 40%;
     border: 3px solid black;
+    width:40%; /* -- REMOVE ON SMALLER SCREENS --*/
     border-radius: 0;
     margin: auto;
     margin-top: 30px;
