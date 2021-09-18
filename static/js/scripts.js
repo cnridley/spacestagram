@@ -39,14 +39,11 @@ function useApiData(data){
     document.getElementById("content").innerHTML = card;
 
     let loved = document.getElementsByClassName("likedImage");
-    let lovedNasaImage = document.getElementsByClassName('card')
-      for (var i = 0 ; i < loved.length && lovedNasaImage.length; i++) {
+      for (var i = 0 ; i < loved.length; i++) {
         loved[i].addEventListener('click' , function(){
           this.innerHTML = `<i class="fas fa-heart"></i>`;
-          var clone = lovedNasaImage.cloneNode(true);
-            console.log(clone)
-        }); 
-      }
+      });
+    }
 
       let dislike = document.getElementsByClassName("dislikeImage");
       for (var i = 0 ; i < dislike.length; i++) {
@@ -54,9 +51,11 @@ function useApiData(data){
           this.innerHTML = `<i class="fas fa-thumbs-down"></i>`;
         }); 
       }
-
-
+  
+  
 }
+
+
 
 
 // let lovedNasaImage = document.getElementsByClassName('card').innerHTML;
