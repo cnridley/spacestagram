@@ -13,6 +13,7 @@ sendApiRequest();
 
 
 function useApiData(data){
+
     let card = "";
 
     for (let d of data){
@@ -45,16 +46,6 @@ function useApiData(data){
           this.innerHTML = `<i class="fas fa-heart"></i>`;
       });
     }
-
-    let lovedNasaImage = document.getElementsByClassName('card');
-    for (let i = 0; i < loved.length && lovedNasaImage.length; i++){
-      loved[i].addEventListener("click", function(){
-          let clone = lovedNasaImage[i]
-          console.log(clone)
-          document.getElementById('favouriteContent').innerHTML = clone;
-      })
-    }
-    
   
       let dislike = document.getElementsByClassName("dislikeImage");
       for (var i = 0 ; i < dislike.length; i++) {
@@ -65,6 +56,16 @@ function useApiData(data){
   
   
 }
+
+
+    // let lovedNasaImage = document.getElementsByClassName('card');
+    // for (let i = 0; i < loved.length && lovedNasaImage.length; i++){
+    //   loved[i].addEventListener("click", function(){
+    //       let clone = lovedNasaImage[i]
+    //       console.log(clone)
+    //       document.getElementById('favouriteContent').innerHTML = clone;
+    //   })
+    // }
 
 
 

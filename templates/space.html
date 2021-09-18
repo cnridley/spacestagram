@@ -9,7 +9,7 @@
   <input type="submit" onclick="sendApiRequest()">
 </div>
 
-
+<div class="boxLoading"></div>
 
 <div id="content" class="row container-fluid m-auto imageRows">
     <!-- API info will be rendered here -->
@@ -19,3 +19,10 @@
 
 {% endblock %}
 
+{% block scripts %}
+<script>
+    $(window).on("load", function(){
+        $('.boxLoading').fadeOut("slow");
+    })
+</script>
+{% endblock %}
