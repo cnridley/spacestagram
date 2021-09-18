@@ -40,16 +40,24 @@ function useApiData(data){
     }
 
     document.getElementById("content").innerHTML = card;
+
+
+
+    let loved = document.getElementsByClassName("likedImage");
+
+
+      for (var i = 0 ; i < loved.length; i++) {
+        loved[i].addEventListener('click' , function(){
+          this.innerHTML = `<i class="fas fa-heart"></i>`;
+          let fave = this.img;
+          document.getElementById("favouriteContent").innerHTML += fave;
+        }) ; 
+      }
 }
 
 
 
 
-// $(document).ready(function(){
-//   $(".likedImage").click(function(){
-//       $(this).attr("style", "display:none")
-//   })
-// });
 
 
 
