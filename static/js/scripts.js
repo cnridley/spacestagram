@@ -11,6 +11,7 @@ async function sendApiRequest(){
 
 sendApiRequest();
 
+
 function useApiData(data){
     let card = "";
 
@@ -45,6 +46,16 @@ function useApiData(data){
       });
     }
 
+    let lovedNasaImage = document.getElementsByClassName('card');
+    for (let i = 0; i < loved.length && lovedNasaImage.length; i++){
+      loved[i].addEventListener("click", function(){
+          let clone = lovedNasaImage[i]
+          console.log(clone)
+          document.getElementById('favouriteContent').innerHTML = clone;
+      })
+    }
+    
+  
       let dislike = document.getElementsByClassName("dislikeImage");
       for (var i = 0 ; i < dislike.length; i++) {
         dislike[i].addEventListener('click' , function(){
@@ -54,33 +65,6 @@ function useApiData(data){
   
   
 }
-
-
-
-
-// let lovedNasaImage = document.getElementsByClassName('card').innerHTML;
-//           for (let j = 0; j < lovedNasaImage.length; j++){
-//             let fave = card[j]
-//             document.getElementById("favouriteContent").innerHTML += fave;
-//           }
-
-
-
-// let loved = document.getElementsByClassName("likedImage");
-// for (var i = 0 ; i < loved.length; i++) {
-//   loved[i].addEventListener('click' , function(){
-//     this.innerHTML = `<i class="fas fa-heart"></i>`;
-    
-//     let lovedNasaImage = document.getElementsByClassName('card')
-//     for (let j = 0; j < lovedNasaImage.length; j++){
-//       var clone = lovedNasaImage[j].cloneNode(true);
-//       console.log(clone)
-
-//     }
-    
-//   }); 
-// }
-
 
 
 
