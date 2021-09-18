@@ -27,10 +27,7 @@ function useApiData(data){
                   <button class="col-3 m-auto images likedImage">
                     <i class="far fa-heart"></i>
                   </button>
-                  <button class="col-3 m-auto images">
-                    <i class="far fa-thumbs-up"></i>
-                  </button>
-                  <button class="col-3 m-auto images">
+                  <button class="col-3 m-auto images dislikeImage">
                     <i class="far fa-thumbs-down"></i>
                   </button>
                   </div>                  
@@ -41,19 +38,27 @@ function useApiData(data){
 
     document.getElementById("content").innerHTML = card;
 
-
-
     let loved = document.getElementsByClassName("likedImage");
-
-
       for (var i = 0 ; i < loved.length; i++) {
         loved[i].addEventListener('click' , function(){
           this.innerHTML = `<i class="fas fa-heart"></i>`;
-          let fave = this.img;
-          document.getElementById("favouriteContent").innerHTML += fave;
-        }) ; 
+        }); 
       }
+
+      let dislike = document.getElementsByClassName("dislikeImage");
+      for (var i = 0 ; i < dislike.length; i++) {
+        dislike[i].addEventListener('click' , function(){
+          this.innerHTML = `<i class="fas fa-thumbs-down"></i>`;
+        }); 
+      }
+
 }
+
+// let lovedNasaImage = document.querySelectorAll("img").src;
+// for (var j = 0; j < lovedNasaImage; j++) {
+//   let fave = lovedNasaImage[j];
+//   document.getElementById("favouriteContent").innerHTML += fave;
+// }
 
 
 
