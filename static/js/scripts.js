@@ -30,7 +30,7 @@ function useApiData(data){
                   <button class="col-3 m-auto images dislikeImage">
                     <i class="far fa-thumbs-down"></i>
                   </button>
-                  </div>                  
+                  </div>                 
             </div>
         `
 
@@ -39,9 +39,12 @@ function useApiData(data){
     document.getElementById("content").innerHTML = card;
 
     let loved = document.getElementsByClassName("likedImage");
-      for (var i = 0 ; i < loved.length; i++) {
+    let lovedNasaImage = document.getElementsByClassName('card')
+      for (var i = 0 ; i < loved.length && lovedNasaImage.length; i++) {
         loved[i].addEventListener('click' , function(){
           this.innerHTML = `<i class="fas fa-heart"></i>`;
+          var clone = lovedNasaImage.cloneNode(true);
+            console.log(clone)
         }); 
       }
 
@@ -52,16 +55,32 @@ function useApiData(data){
         }); 
       }
 
+
 }
 
-// let lovedNasaImage = document.querySelectorAll("img").src;
-// for (var j = 0; j < lovedNasaImage; j++) {
-//   let fave = lovedNasaImage[j];
-//   document.getElementById("favouriteContent").innerHTML += fave;
+
+// let lovedNasaImage = document.getElementsByClassName('card').innerHTML;
+//           for (let j = 0; j < lovedNasaImage.length; j++){
+//             let fave = card[j]
+//             document.getElementById("favouriteContent").innerHTML += fave;
+//           }
+
+
+
+// let loved = document.getElementsByClassName("likedImage");
+// for (var i = 0 ; i < loved.length; i++) {
+//   loved[i].addEventListener('click' , function(){
+//     this.innerHTML = `<i class="fas fa-heart"></i>`;
+    
+//     let lovedNasaImage = document.getElementsByClassName('card')
+//     for (let j = 0; j < lovedNasaImage.length; j++){
+//       var clone = lovedNasaImage[j].cloneNode(true);
+//       console.log(clone)
+
+//     }
+    
+//   }); 
 // }
-
-
-
 
 
 
