@@ -38,10 +38,11 @@ function useApiData(data){
         `
 
     }
-  
 
     document.getElementById("content").innerHTML = card;
 }
+
+
 
 
 // $(document).ready(function(){
