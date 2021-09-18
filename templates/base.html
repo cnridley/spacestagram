@@ -16,47 +16,29 @@
 <body>
 
 
-<a class="header" href="{{ url_for ('index') }}">Spacestagram</a>
+  <a class="header" href="{{ url_for ('index') }}">Spacestagram</a>
+
+ 
+    <!-- flash messages -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="row conatiner-fluid messageRow m-auto">
+              {{ message }}
+            </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+
 {% if session.user %}
         <span class="menuOptions">
+          <a href="{{ url_for ('space') }}">Home Page</a>
             <a href="{{ url_for ('favourite') }}">Favourite Images</a>
-            <a href="{{ url_for ('logout') }}" data-toggle="modal" data-target="#LogOutModal">Log Out</a>
+            <a href="{{ url_for ('logout') }}">Log Out</a>
         </span>
 {% endif %}
 
-    <section>
-        <!-- flash messages -->
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="row messages">
-                        {{ message }}
-                    </div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-    </section>
-
-    <!-- Log Out Modal -->
-<div class="modal fade" id="LogOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Log Out</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Are you sure you want to log out?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Stay Logged In</button>
-          <a href="">Log Out</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
     {% block content %}
     
@@ -71,6 +53,3 @@
 {% endblock %}
 </body>
 </html>
-
-<!--font-family: 'Kaushan Script', cursive;
-font-family: 'Roboto', sans-serif;-->

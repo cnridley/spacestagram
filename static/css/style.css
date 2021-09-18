@@ -172,19 +172,29 @@ body{
     100% { transform: rotate(360deg); }
   }
 
-  .messages {
+  .messageRow {
     font-family: 'Kaushan Script', cursive;
-    font-size: 50px;
-    text-align: center;
+    font-size: 30px;
     color: white;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modal-title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+  }
+
+  .modal-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
   }
 
   /*-- media queries for smaller screens --*/
 @media only screen and (max-width: 767px) {
     .header {
         font-family: 'Kaushan Script', cursive;
-        font-size: 50px;
-        text-align: center;
+        font-size: 40px;
         position: absolute;
         top: 30px;
         left: 18%;
@@ -297,13 +307,14 @@ body{
     color: white;
     font-size: 10px;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .menuOptions a:hover {
     color: darkgray;
     text-decoration: underline;
-    margin-right: 20px;
+    margin-right: 10px;
+    font-size: 10px;
 }
 
 .datePicker{
