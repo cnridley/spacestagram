@@ -8,6 +8,6 @@ When a user logs in data is fetched from the NASA APOD API and displayed to the 
 
 An account has been made for testing purposes - but please feel free to create a new user! 
 
-username: space
+Username: space
 
-password: space123
+Password: space123
