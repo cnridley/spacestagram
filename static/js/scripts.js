@@ -1,4 +1,6 @@
 async function sendApiRequest(){
+    let loader = `<div id="boxLoading"></div>`;
+    document.getElementById('content').innerHTML = loader;
     let apiKey = "ausYefrhnm9ixSnHn7hClnVkv7YfsUDL4yQMhQSL"
     let start = document.getElementById("start").value;
     let end = document.getElementById("end").value;
