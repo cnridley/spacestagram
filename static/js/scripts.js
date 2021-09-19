@@ -11,7 +11,6 @@ async function sendApiRequest(){
 
 sendApiRequest();
 
-
 function useApiData(data){
 
     let card = "";

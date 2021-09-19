@@ -67,11 +67,6 @@ def space():
     return render_template("space.html")
 
 
-@app.route('/favourite')
-def favourite():
-    return render_template("favourites.html")
-
-
 @app.route("/logout")
 def logout():
     # remove user from session cookie
