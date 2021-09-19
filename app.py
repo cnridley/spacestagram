@@ -31,7 +31,7 @@ def index():
             #make sure the user password matches that the password hash generated in the register route.
             if check_password_hash(registered_user['password'], request.form.get('password')):
                 session['user'] = request.form.get('username').lower()
-                flash("Welcome, {}".format(request.form.get('username')))
+                flash("Welcome, {}!".format(request.form.get('username')))
                 return redirect(url_for('space'))
             
             else:

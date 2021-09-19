@@ -58,7 +58,7 @@ function useApiData(data){
   
 }
 
-
+    // Wanted to add a favourites page but 'cannot define property of null' error kept occuring.
     // let lovedNasaImage = document.getElementsByClassName('card');
     // for (let i = 0; i < loved.length && lovedNasaImage.length; i++){
     //   loved[i].addEventListener("click", function(){
