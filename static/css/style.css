@@ -157,7 +157,7 @@ body{
     font-size: 18px;
 }
 
-
+/* 
 #boxLoading {
     border: 16px solid #f3f3f3; 
     border-top: 16px solid grey; 
@@ -170,7 +170,7 @@ body{
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+  } */
 
   .messageRow {
     font-family: 'Kaushan Script', cursive;
